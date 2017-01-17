@@ -13,6 +13,10 @@
 		985E934A1E2DF2D2006E6369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985E93481E2DF2D2006E6369 /* Main.storyboard */; };
 		985E934C1E2DF2D2006E6369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 985E934B1E2DF2D2006E6369 /* Assets.xcassets */; };
 		985E934F1E2DF2D2006E6369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985E934D1E2DF2D2006E6369 /* LaunchScreen.storyboard */; };
+		985E935A1E2DF3D4006E6369 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E93581E2DF3D4006E6369 /* JPEngine.m */; };
+		985E935B1E2DF3D4006E6369 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 985E93591E2DF3D4006E6369 /* JSPatch.js */; };
+		985E935E1E2DF4B5006E6369 /* FYYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 985E935D1E2DF4B5006E6369 /* FYYPerson.m */; };
+		985E93601E2DF70A006E6369 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 985E935F1E2DF70A006E6369 /* test.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		985E934B1E2DF2D2006E6369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		985E934E1E2DF2D2006E6369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		985E93501E2DF2D2006E6369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		985E93571E2DF3D4006E6369 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
+		985E93581E2DF3D4006E6369 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
+		985E93591E2DF3D4006E6369 /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
+		985E935C1E2DF4B5006E6369 /* FYYPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYYPerson.h; sourceTree = "<group>"; };
+		985E935D1E2DF4B5006E6369 /* FYYPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYYPerson.m; sourceTree = "<group>"; };
+		985E935F1E2DF70A006E6369 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,12 @@
 			children = (
 				985E93421E2DF2D2006E6369 /* AppDelegate.h */,
 				985E93431E2DF2D2006E6369 /* AppDelegate.m */,
+				985E93561E2DF3D4006E6369 /* JSPatch */,
 				985E93451E2DF2D2006E6369 /* ViewController.h */,
 				985E93461E2DF2D2006E6369 /* ViewController.m */,
+				985E935F1E2DF70A006E6369 /* test.js */,
+				985E935C1E2DF4B5006E6369 /* FYYPerson.h */,
+				985E935D1E2DF4B5006E6369 /* FYYPerson.m */,
 				985E93481E2DF2D2006E6369 /* Main.storyboard */,
 				985E934B1E2DF2D2006E6369 /* Assets.xcassets */,
 				985E934D1E2DF2D2006E6369 /* LaunchScreen.storyboard */,
@@ -77,6 +91,16 @@
 				985E93401E2DF2D2006E6369 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		985E93561E2DF3D4006E6369 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				985E93571E2DF3D4006E6369 /* JPEngine.h */,
+				985E93581E2DF3D4006E6369 /* JPEngine.m */,
+				985E93591E2DF3D4006E6369 /* JSPatch.js */,
+			);
+			path = JSPatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +129,7 @@
 		985E93341E2DF2D2006E6369 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FYY;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "冯亚运";
 				TargetAttributes = {
@@ -137,8 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985E93601E2DF70A006E6369 /* test.js in Resources */,
 				985E934F1E2DF2D2006E6369 /* LaunchScreen.storyboard in Resources */,
 				985E934C1E2DF2D2006E6369 /* Assets.xcassets in Resources */,
+				985E935B1E2DF3D4006E6369 /* JSPatch.js in Resources */,
 				985E934A1E2DF2D2006E6369 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				985E93471E2DF2D2006E6369 /* ViewController.m in Sources */,
+				985E935A1E2DF3D4006E6369 /* JPEngine.m in Sources */,
+				985E935E1E2DF4B5006E6369 /* FYYPerson.m in Sources */,
 				985E93441E2DF2D2006E6369 /* AppDelegate.m in Sources */,
 				985E93411E2DF2D2006E6369 /* main.m in Sources */,
 			);
@@ -271,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = jspatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wisorg.jspatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = jspatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wisorg.jspatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +338,7 @@
 				985E93551E2DF2D2006E6369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
